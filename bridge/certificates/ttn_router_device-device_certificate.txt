@@ -1,0 +1,1 @@
+this is just an example - you have to put your own secret here - make sure there is no newline in here:

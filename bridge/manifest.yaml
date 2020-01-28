@@ -1,0 +1,6 @@
+---
+applications:
+- name: mqtt_routet_your_user_id_here
+  host: mqtt_router_your_user_id_here
+  path: mqtt_router
+  memory: 128M
