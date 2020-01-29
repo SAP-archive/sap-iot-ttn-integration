@@ -17,8 +17,8 @@ This integration was presented and demoed at the things conference january 2020 
 ## Prerequisites
 
 1. A (free) account at [https://thethingsnetwork.com/](https://thethingsnetwork.com/)
-2. An SAP cloud platform global account with entitlements for Application Runtime, Leonardo IoT and Cloud Platform Internet of Things
-3. An SAP S/4 on premise or cloud system or an earlier version of SAP ERP with sales order processing configured and running
+2. An SAP Cloud Platform global account with entitlements for Application Runtime, Leonardo IoT and Cloud Platform Internet of Things
+3. An SAP S/4HANA Cloud system as of release 2002 (planned for Februrary 2020) with sales order processing configured and running
 
 ## Download, Installation and Configuration
 
@@ -126,7 +126,7 @@ Here is an example of how the data over the last 24 hours could look like. Durin
 
  ![](images/sensor_data.png)
 
-## Establish a connection between Leonardo IoT and your S4 system
+## Establish a connection between Leonardo IoT and your ERP system
 
 To do this work with your system administrator to get a technical user and password for your system. You should have implemented &quot;4IH: Delivery Insights enabled by IoT&quot; scope item which will result in a new so-called &quot;communication arrangement&quot; with id &quot;SAP\_COM\_0570&quot; being available and then create a destination in your cloud foundry subaccount like this one:
 
