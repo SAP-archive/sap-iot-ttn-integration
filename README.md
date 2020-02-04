@@ -1,5 +1,5 @@
 # Description
-Receive tracking data from battery powered sensors via the things network, match them to a business process context in SAP Leonardo IoT and trigger automatic updates in SAP ERP. 
+Receive tracking data from battery-powered sensors via the things network, match them to a business process context in SAP Leonardo IoT and trigger automatic updates in SAP ERP. 
 
 ## Overview
 
@@ -17,14 +17,14 @@ This integration was presented and demoed at the things conference january 2020 
 ## Prerequisites
 
 1. A (free) account at [https://thethingsnetwork.com/](https://thethingsnetwork.com/)
-2. An SAP Cloud Platform global account with entitlements for Application Runtime, Leonardo IoT and Cloud Platform Internet of Things
+2. An SAP Cloud Platform global account with entitlements for Application Runtime, SAP Leonardo IoT, and SAP Cloud Platform Internet of Things
 3. An SAP S/4HANA Cloud system as of release 2002 (planned for Februrary 2020) with sales order processing configured and running
 
 ## Download, Installation and Configuration
 
-See below step by step guide for instructions.
+See the step-by-step guide below for instructions.
 
-# Step by Step Guide
+# Step-by-Step Guide
 
 ## Build a simple tracker application with the things node
 
@@ -181,7 +181,7 @@ This approach to integration requires you to create a device shadow or twin for 
 
 With a simple improvement the solution can be used to map multiple different applications in ttn with multiple different use cases in Leonardo IoT. Please refer to the comments in the code to check where it can be improved in this regard.
 
-## Support & Contributing
+## Support and Contributing
 
 Please use our community at https://answers.sap.com/tags/73554900100800002247 for questions and answers on this example.
 
@@ -194,4 +194,4 @@ If you have another device management cloud integration in mind please feel free
 ## License
 
 Copyright (c) 2020 SAP SE or an SAP affiliate company. All rights reserved.
-This file is licensed under the SAP Sample Code License except as noted otherwise in the [LICENSE.txt](LICENSE.txt) in this repository.
+This file is licensed under the SAP Sample Code License except as noted otherwise in the [LICENSE](LICENSE) in this repository.
