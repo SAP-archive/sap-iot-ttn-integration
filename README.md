@@ -98,13 +98,13 @@ See the step-by-step guide below for instructions.
 4. You should see data coming in in the Thing Modeler for your &quot;delivery thing&quot; for some of the properties based on the Node JS script used in the second tutorial
 5. To be able to see the thing in a template based app make sure to define the current latitude and longitude in the thing modeler ui for it.
 
-## Forward data from TTN devices to SAP Leonardo IoT
+## Forward data from TTN devices to SAP IoT
 
 We will combine the 2 node js examples to forward data coming from ttn to SAP.
 
 1. Clone or download the zip of this repository to your PC and in a terminal window go to the directory "bridge".
 
-2. You will find a file called "start.js" there - this is a mix of the 2 previous node js examples - on one side its a subscribing client to the ttn mqtt server, on the other side its publishing to the leonardo iot mqtt server.
+2. You will find a file called "start.js" there - this is a mix of the 2 previous node js examples - on one side its a subscribing client to the ttn mqtt server, on the other side its publishing to the SAP IoT mqtt server.
 2. From the SAP Cloud Platform Internet of Things service cockpit create a new MQTT device of type &quot;router device&quot; with &quot;ttn\_router\_device&quot; as its name and download the certificate and passphrase into the bridge/certificates folder in the cloned repository.
 3. Update the code with the right file names for certificate and passphrase, your capability alternate id, your host\_address. Also update the file app_list.txt with your ttn appID and accessKey.
 4. Run the new node app using &quot;node starts.js&quot;. In the console you can see when it receives data and how it is forwarded to SAP. Check that the data arrives in the SAP device model and that it arrives in the SAP Thing Modeler.
@@ -179,7 +179,7 @@ One particular sample application that might be also helpful is this one: [https
 
 This approach to integration requires you to create a device shadow or twin for every device you create in ttn. At this point of time this is required to allow for the flexible mapping between device properties and thing properties.
 
-With a simple improvement the solution can be used to map multiple different applications in ttn with multiple different use cases in Leonardo IoT. Please refer to the comments in the code to check where it can be improved in this regard.
+With a simple improvement the solution can be used to map multiple different applications in ttn with multiple different use cases in SAP IoT. Please refer to the comments in the code to check where it can be improved in this regard.
 
 ## Support and Contributing
 
