@@ -1,23 +1,23 @@
 # Description
-Receive tracking data from battery-powered sensors via the things network, match them to a business process context in SAP Leonardo IoT and trigger automatic updates in SAP ERP. 
+Receive tracking data from battery-powered sensors via the things network, match them to a business process context in SAP IoT and trigger automatic updates in SAP ERP. 
 
 ## Overview
 
 The Intention of this is to build a solution, that allows deliveries coming from the sales order processing in ERP to be tracked with sensors to allow to find out, if a product that should have been cooled and not exposed to too much light, was actually cooled and protected from light all the way from shipment to receiving.
 
-SAP Leonardo IoT is used for the following functions:
+SAP IoT is used for the following functions:
 
 1. Map between device data and business process data during ingestion
 2. Storing full time series of both sensor data and business process data for later analysis
 
-See also the powerpoint presentation at the top level of this repository to understand how the data is mapped and to understand the architecture.
+See also the PowerPoint presentation at the top level of this repository to understand how the data is mapped and to understand the architecture.
 
-This integration was presented and demoed at the things conference january 2020 and a video recording will be made available.
+This integration was presented and demoed at the things conference in January 2020 and a video recording will be made available.
 
 ## Prerequisites
 
 1. A (free) account at [https://thethingsnetwork.com/](https://thethingsnetwork.com/)
-2. An SAP Cloud Platform global account with entitlements for Application Runtime, SAP Leonardo IoT, and SAP Cloud Platform Internet of Things
+2. An SAP Cloud Platform global account with entitlements for Application Runtime, SAP IoT, and SAP Cloud Platform Internet of Things
 3. An SAP S/4HANA Cloud system as of release 2002 (planned for Februrary 2020) with sales order processing configured and running
 
 ## Download, Installation and Configuration
@@ -69,7 +69,7 @@ See the step-by-step guide below for instructions.
 1. Follow this tutorial to create a node js app, that reads all incoming messages from all your tracking devices: [https://www.thethingsnetwork.org/docs/applications/nodejs/quick-start.html](https://www.thethingsnetwork.org/docs/applications/nodejs/quick-start.html)
 2. You can now see the data coming through on your computer
 
-## Create Device and Thing Model in SAP Leonardo IoT
+## Create Device and Thing Model in SAP IoT
 
 1. Follow the first 2 tutorials at [https://developers.sap.com/group.iot-setup-scp-service.html](https://developers.sap.com/group.iot-setup-scp-service.html) to have a device model but
     1. add another capability with name ttn\_env\_tracker\_capability (also use the same as the capability alternate id) and add the following 3 properties to it: analog\_in\_4 (float), temperature\_5 (float), luminosity\_6 (integer) and analog\_in\_7 (float)
@@ -126,7 +126,7 @@ Here is an example of how the data over the last 24 hours could look like. Durin
 
  ![](images/sensor_data.png)
 
-## Establish a connection between Leonardo IoT and your ERP system
+## Establish a connection between SAP IoT and your ERP system
 
 To do this work with your system administrator to get a technical user and password for your system. You should have implemented &quot;4IH: Delivery Insights enabled by IoT&quot; scope item which will result in a new so-called &quot;communication arrangement&quot; with id &quot;SAP\_COM\_0570&quot; being available and then create a destination in your cloud foundry subaccount like this one:
 
@@ -183,15 +183,14 @@ With a simple improvement the solution can be used to map multiple different app
 
 ## Support and Contributing
 
-Please use our community at https://answers.sap.com/tags/73554900100800002247 for questions and answers on this example.
+Please use our [community](https://answers.sap.com/tags/73554900100800002247) for questions and answers on the sample code.
 
-If you have found a material issue with the example please create an issue in this github repo.
+If you have found a material issue with the example please create an [issue](https://github.com/SAP-samples/sap-iot-samples/issues) in this GitHub repo.
 
-Please feel free to put in a pull request and give us some time to review and respond. We likely will update this example as the architecture of Leonardo IoT is changing.
+Please feel free to put in a pull request and give us some time to review and respond. We likely will update this example as the architecture of SAP IoT is changing.
 
 If you have another device management cloud integration in mind please feel free to use the ideas from this example and let us know so we can reference it here.
 
 ## License
 
-Copyright (c) 2020 SAP SE or an SAP affiliate company. All rights reserved.
-This file is licensed under the SAP Sample Code License except as noted otherwise in the [LICENSE](LICENSE) in this repository.
+Copyright (c) 2020 SAP SE or an SAP affiliate company. All rights reserved. This file is licensed under the Apache Software License, version 2.0 except as noted otherwise in the [LICENSE](LICENSE) in this repository.
