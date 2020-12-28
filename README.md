@@ -1,5 +1,5 @@
 # Description
-Receive tracking data from battery-powered sensors via the things network, match them to a business process context in SAP IoT and trigger automatic updates in SAP ERP. 
+Receive tracking data from battery-powered sensors via the things network, match them to a business process context in SAP IoT and trigger automatic updates in SAP ERP.
 
 ## Overview
 
@@ -17,7 +17,7 @@ This integration was presented and demoed at the things conference in January 20
 ## Prerequisites
 
 1. A (free) account at [https://thethingsnetwork.com/](https://thethingsnetwork.com/)
-2. An SAP Cloud Platform global account with entitlements for Application Runtime, SAP IoT, and SAP Cloud Platform Internet of Things
+2. An SAP Cloud Platform global account with entitlements for Application Runtime, SAP IoT (based on the 'standard plan'), and SAP Cloud Platform Internet of Things. The instructions for the new SAP IoT license (based on the 'oneproduct' plan) are slightly different and not provided here.
 3. An SAP S/4HANA Cloud system as of release 2002 (planned for Februrary 2020) with sales order processing configured and running
 
 ## Download, Installation and Configuration
@@ -91,7 +91,7 @@ See the step-by-step guide below for instructions.
         1. SALESORDERITEMUNIQUEID
         1. SENSORUNIT
         1. THRESHOLDVALUE
-    
+
     2. measurement properties for battery (float, in Volt), temperature (float, in degrees Celsius), luminosity (integer, in lux)
 3.Map them to the properties in the device model as follows (you might have other unmapped properties):
 ![](images/liot_mapping.png)
