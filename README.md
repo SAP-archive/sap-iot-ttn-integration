@@ -1,3 +1,5 @@
+[![REUSE status](https://api.reuse.software/badge/github.com/SAP-samples/sap-iot-ttn-integration)](https://api.reuse.software/info/github.com/SAP-samples/sap-iot-ttn-integration)
+
 # Description
 Receive tracking data from battery-powered sensors via the things network, match them to a business process context in SAP IoT and trigger automatic updates in SAP ERP.
 
@@ -193,6 +195,5 @@ If you have another device management cloud integration in mind please feel free
 
 ## License
 
-Copyright (c) 2020 SAP SE or an SAP affiliate company. All rights reserved. This file is licensed under the Apache Software License, version 2.0 except as noted otherwise in the [LICENSE](LICENSES/Apache-2.0.txt) in this repository.
+Copyright (c) 2020 SAP SE or an SAP affiliate company. All rights reserved. This project is licensed under the Apache Software License, version 2.0 except as noted otherwise in the [LICENSE](LICENSES/Apache-2.0.txt) in this repository.
 
-[![REUSE status](https://api.reuse.software/badge/github.com/SAP-samples/sap-iot-ttn-integration)](https://api.reuse.software/info/github.com/SAP-samples/sap-iot-ttn-integration)
